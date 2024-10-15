@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/botones.css">
+    <link rel="stylesheet" href="css/luz.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="options">
+<h1>STREAMING</h1>
+</div>
+
+<div class="options">
+    <button id="FORMULARIOCUENTAS" onclick="mostrar_ocultar('inicio');" type="button" class="btn btn-dark">INICIO</button>
+    <button id="FORMULARIOVENTAS" onclick="mostrar_ocultar('nuevo');" type="button" class="btn btn-dark">INGRESAR VENTA NUEVA</button>
+    <button id="FORMULARIOCLIENTES" onclick="mostrar_ocultar('clientes');" type="button" class="btn btn-dark">LISTADO DE CLIENTES</button>
+    <button id="FORMULARIOCUENTAS" onclick="mostrar_ocultar('cuentas');" type="button" class="btn btn-dark">CUENTAS ACTIVAS</button>
+</div>
+
+<!-- FORMULARIO VENTAS -->
+<div id="nuevo" name="nuevo" display = "none" class="container">
+    <form id="formNuevaVenta">
+        <h3>REGISTRAR NUEVA VENTA</h3>
+
+        <label for="TIPODECUENTA">STREAMING VENDIDO:</label>
+        <select name="TIPODECUENTA" id="TIPODECUENTA" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option>Netflix</option>
+            <option>Amazon Prime</option>
+            <option>HBO Max</option>
+            <option>Win Sports Max</option>
+            <option>Crunchyroll</option>
+        </select><br><br>
+
+        <label for="NOMBRECLIENTE">NOMBRE CLIENTE:</label>
+        <input type="text" id="NOMBRECLIENTE" required><br><br>
+
+        <label for="CELULARWHATSAPP">CELULAR WHATSAPP:</label>
+        <input type="text" id="CELULARWHATSAPP" required><br><br>
+
+        <label for="EMAILCUENTA">EMAIL DE LA CUENTA:</label>
+        <input type="email" id="EMAILCUENTA" required><br><br>
+
+        <label for="CLAVECUENTA">CLAVE DE LA CUENTA:</label>
+        <input type="text" id="CLAVECUENTA" required><br><br>
+
+        <label for="FECHAINICIO">FECHA DE INICIO:</label>
+        <input type="date" id="FECHAINICIO" required><br><br>
+
+        <label for="FECHAFIN">FECHA DE TERMINACION:</label>
+        <input type="date" id="FECHAFIN" required><br><br>
+
+        <button type="button" class="btn btn-outline-success" onclick="registrarVenta()">REGISTRAR VENTA</button>
+    </form>
+</div>
+
+<!-- FORMULARIO CLIENTES -->
+<div id="clientes" class="container" style="display: none;">
+    <form>
+        <h3>DATOS DE LOS CLIENTES</h3>
+
+        <label for="BUSCARWHATSAPP">INGRESA EL WHATSAPP PARA BUSCAR:</label>
+        <input type="number" id="BUSCARWHATSAPP" required><br><br>
+
+        <button type="button" class="btn btn-outline-success" onclick="buscarCliente()">BUSCAR CLIENTE</button>
+    </form>
+
+    <!-- Contenedor para mostrar resultados -->
+    <div id="resultadoCliente"></div>
+</div>
+
+
+<!-- FORMULARIO CUENTAS -->
+<div id="cuentas" display = "none" name="cuentas" class="container">
+    <form>
+        <h3>LISTADO DE CUENTAS CON SUS CLIENTES ACTUALES</h3>
+
+    </form>
+</div>
+
+<!--SCRIPTS-->
+<script src="js/luz.js"></script>
+<script src="js/botones.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

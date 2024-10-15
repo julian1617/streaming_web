@@ -1,0 +1,17 @@
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Efecto de profundidad */
+    transition: transform 0.8s, box-shadow 0.8s;
+    text-align: center;
+    display: none;
+}
+
+.options {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

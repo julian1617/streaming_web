@@ -1,0 +1,33 @@
+/* Fondo de pantalla personalizado */
+body {
+    background: url('../fondos/streaming.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Configuramos los colores */
+:root {
+    --netflix-red: #E50914;
+    --amazon-blue: #146EB4;
+    --hbo-purple: #5A189A;
+}
+
+/* Transición suave del brillo */
+h1, h2, h3, button, label, input, textarea {
+    position: relative;
+    transition: text-shadow 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+/* Efecto de luz basado en la distancia */
+.glowing {
+    text-shadow: 
+        0 0 10px currentColor,
+        0 0 20px currentColor,
+        0 0 30px currentColor;
+    box-shadow: 
+        0 0 10px currentColor,
+        0 0 30px currentColor,
+        0 0 50px currentColor;
+}
