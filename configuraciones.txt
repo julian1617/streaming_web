@@ -1,0 +1,33 @@
+
+Extensiones Visual Code
+- Auto Rename Tag: Cuando se cambie una etiqueta de apertura en el codigo automaticamente va a cambiar el nombre de la etiqueta de cierre de la misma
+
+- Live Server: se despliega servidor temporal para los cambios en el navegador sin conectar nada adicioanl
+
+- Code Runner: permite probar el codigo por partes en la misma consola
+
+- Error Lens: permite ver los errores mientras se programa y en todo el codigo
+
+- Indent-rainbow: me muestra los colores del codigo, errores y espaciados, me identifica por medio de colores.
+
+- Path Intellisense: Muestra sugerencias de archivos existentes a medida que se escribe es autocompletado
+
+- Code Spell Checker: Corrige la ortografia de lo escrito
+
+- Css Speek: al pesionar control o dando clic me llega donde esta la definicion en el css
+
+- Json to TS: permite ingresar en un tipo js y lo transforma en un integrado. control chif alt S
+
+- 
+
+
+Instalaciones Para El Proyecto
+
+//instalacion inicial para vistas y programacion
+npm install ejs
+
+//Instalar De Conexion Para Express y Base De Datos
+
+npm init -y
+npm install mysql express ejs
+
